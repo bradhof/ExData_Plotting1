@@ -1,6 +1,3 @@
-#source the common function for reading and subsetting the dataset (ie. readData())
-source("readData.R")
-
 #-------------------------------
 #FUNCTION makePlot1
 #plots a histgram of the Global Active Power of the energy dataset
@@ -8,6 +5,9 @@ source("readData.R")
 #------------------------------
 makePlot1 <- function()
 {
+     #source the common function for reading and subsetting the dataset (ie. readData())
+     source("readData.R")
+     
      #get the tidy filtered dataset
      data <- readData()
      

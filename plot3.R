@@ -1,6 +1,3 @@
-#source the common function for reading and subsetting the dataset (ie. readData())
-source("readData.R")
-
 #-------------------------------
 #FUNCTION makePlot3
 #plots a line chart of the three sub metering variables
@@ -8,6 +5,9 @@ source("readData.R")
 #------------------------------
 makePlot3 <- function()
 {
+     #source the common function for reading and subsetting the dataset (ie. readData())
+     source("readData.R")
+     
      #get the tidy filtered dataset
      data <- readData()
      
